@@ -14,7 +14,7 @@ namespace MqNotifier
             {
                 HostName = Environment.GetEnvironmentVariable("AMQP_HOSTNAME"),
                 Port = int.Parse(Environment.GetEnvironmentVariable("AMQP_PORT")),
-                VirtualHost = Environment.GetEnvironmentVariable("AMQP_HOSTNAME"),
+                VirtualHost = Environment.GetEnvironmentVariable("AMQP_VHOST"),
                 UserName = Environment.GetEnvironmentVariable("AMQP_USERNAME"),
                 Password = Environment.GetEnvironmentVariable("AMQP_PASSWORD"),
                 ClientProvidedName = "MqNotifier",
