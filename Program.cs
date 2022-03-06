@@ -20,6 +20,8 @@ namespace MqNotifier
                 ClientProvidedName = "MqNotifier",
             };
 
+            factory.Ssl.Enabled = factory.Port == 5671;
+
             var connection = factory.CreateConnection();
             var channel = connection.CreateModel();
 
